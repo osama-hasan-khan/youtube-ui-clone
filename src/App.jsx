@@ -11,8 +11,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="flex flex-col h-full">
-        <Header />
+        {/* <Header /> */}
         <Routes>
+          <Route path="/" element={<Header />} />
           <Route path="/searchResult/:searchQuery" element={<SearchResult />} />
         </Routes>
       </div>

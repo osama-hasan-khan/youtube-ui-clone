@@ -1,10 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// proving context api to the whole app
+import { ContextProviver } from "./contexts/contextApi";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <ContextProviver>
+      <App />
+    </ContextProviver>
+  </React.StrictMode>
+);

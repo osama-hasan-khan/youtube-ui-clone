@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 // react router packages
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -14,9 +14,15 @@ import { RiVideoAddLine } from "react-icons/ri";
 import { FiBell } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 
+// import conrext api
+import { Context } from "../contexts/contextApi";
+
 const Header = () => {
   // state for tracking search string
   const [searchQuery, setSearchQuery] = useState("");
+
+  // using contex api in header component 
+  const { mobileMenu, setMobileMenu } = useContext(Context);
 
   // to navigate the search pages
   const navigate = useNavigate();
@@ -31,7 +37,12 @@ const Header = () => {
     }
   };
 
-  return <div>Header</div>;
+  // mobile menu and using toggle state created by context api
+  const mobileMenuToggle = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
+  return <div className="">Header</div>;
 };
 
 export default Header;

@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-4">
+    <div className="sticky top-0 flex justify-between items-center h-14 px-4 md:px-5">
       {/* logo */}
       <div className="flex items-center gap-6">
         <HiOutlineMenu size={26} className="cursor-pointer" />

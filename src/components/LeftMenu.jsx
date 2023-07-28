@@ -1,14 +1,15 @@
 import React from "react";
-import { categories } from "../utils/constants";
+import { categories, links } from "../utils/constants";
 import LeftNavMenuItem from "./LeftNavMenuItem";
 import { useContext } from "react";
 import { Context } from "../contexts/contextApi";
+import { Link } from "react-router-dom";
 
 const LeftMenu = () => {
   const { selectedCategory, setSelectedCategory } = useContext(Context);
 
   return (
-    <div className="w-[240px] overflow-y-auto py-4">
+    <div className="w-[260px] overflow-y-auto py-4">
       <div className="flex px-5 flex-col">
         {categories.map((item) => {
           return (
@@ -23,6 +24,24 @@ const LeftMenu = () => {
             </div>
           );
         })}
+        <ul className="flex gap-2 flex-wrap">
+          {links[0].map((link) => {
+            return (
+              <Link>
+                <li className="color-[#737373] text-sm">{link}</li>
+              </Link>
+            );
+          })}
+          <ul className="flex gap-2 flex-wrap">
+            {links[1].map((link) => {
+              return (
+                <Link>
+                  <li className="color-[#737373] text-sm">{link}</li>
+                </Link>
+              );
+            })}
+          </ul>
+        </ul>
       </div>
     </div>
   );

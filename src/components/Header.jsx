@@ -6,9 +6,8 @@ import { Link, useNavigate } from "react-router-dom";
 // icons
 import { HiOutlineMenu } from "react-icons/hi";
 import { BsBell, BsCameraVideo, BsYoutube } from "react-icons/bs";
-import { BiSearch, BiCross } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 import { BsMicFill } from "react-icons/bs";
-import { IoIosSearch } from "react-icons/io";
 
 // import conrext api
 import { Context } from "../contexts/contextApi";
@@ -18,7 +17,12 @@ const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   // using contex api in header component
-  const { mobileMenu, setMobileMenu } = useContext(Context);
+  const { clicked, setClicked } = useContext(Context);
+
+  // toggle short navbar
+  const toggleNav = () => {
+    setClicked(!clicked);
+  };
 
   // to navigate the search pages
   const navigate = useNavigate();
@@ -42,7 +46,9 @@ const Header = () => {
     <div className="sticky top-0 flex justify-between items-center h-14 px-4 md:px-7 shadow-sm">
       {/* logo */}
       <div className="flex items-center gap-6">
-        <HiOutlineMenu size={26} className="cursor-pointer" />
+        <div className="flex items-center p-2 rounded-full hover:bg-zinc-200 cursor-pointer">
+          <HiOutlineMenu size={26} onClick={toggleNav} />
+        </div>
         <div>
           <Link to="/" className="flex items-center gap-1">
             <BsYoutube size={30} className="text-red-600/90" />

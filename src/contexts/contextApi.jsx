@@ -5,6 +5,7 @@ export const Context = createContext();
 export const ContextProviver = ({ children }) => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [clicked, setClicked] = useState(false);
 
   return (
     <Context.Provider
@@ -13,6 +14,8 @@ export const ContextProviver = ({ children }) => {
         setMobileMenu,
         selectedCategory,
         setSelectedCategory,
+        clicked,
+        setClicked,
       }}
     >
       {children}

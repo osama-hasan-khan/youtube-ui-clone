@@ -13,6 +13,23 @@ import { RiFeedbackLine } from "react-icons/ri";
 import { SiYoutubemusic, SiYoutubestudio } from "react-icons/si";
 import { TbHanger2 } from "react-icons/tb";
 
+export const shortNavbar = [
+  {
+    name: "Home",
+    icon: AiFillHome,
+    type: "home",
+  },
+  { name: "Shorts", icon: AiFillPlayCircle, type: "category" },
+  { name: "Subscriptions", icon: BsPlayBtn, type: "category" },
+  {
+    name: "YouTube Music",
+    icon: SiYoutubemusic,
+    type: "category",
+  },
+  { name: "Library", icon: CgPlayButtonR, type: "category" },
+  { name: "Downloads", icon: LiaDownloadSolid, type: "category" },
+];
+
 export const categories = [
   { name: "Home", icon: AiFillHome, type: "home" },
   { name: "Shorts", icon: AiFillPlayCircle, type: "category" },

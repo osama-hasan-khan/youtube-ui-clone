@@ -1,4 +1,4 @@
-import { AiFillHome, AiOutlineFlag } from "react-icons/ai";
+import { AiFillHome, AiOutlineFlag, AiFillPlayCircle } from "react-icons/ai";
 import { MdLocalFireDepartment, MdLiveTv } from "react-icons/md";
 import { CgMusicNote } from "react-icons/cg";
 import { FiFilm } from "react-icons/fi";
@@ -7,10 +7,21 @@ import { ImNewspaper } from "react-icons/im";
 import { GiDiamondTrophy, GiEclipse } from "react-icons/gi";
 import { RiLightbulbLine, RiFeedbackLine } from "react-icons/ri";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
+import { BsPlayBtn } from "react-icons/bs";
+import { SiYoutubemusic } from "react-icons/si";
+import {CgPlayButtonR} from "react-icons/cg"
 
 export const categories = [
   { name: "Home", icon: AiFillHome, type: "home" },
-  { name: "Trending", icon: MdLocalFireDepartment, type: "category" },
+  { name: "Shorts", icon: AiFillPlayCircle, type: "category" },
+  { name: "Subscriptions", icon: BsPlayBtn, type: "category" },
+  {
+    name: "YouTube Music",
+    icon: SiYoutubemusic,
+    type: "category",
+    border: true,
+  },
+  { name: "Library", icon: CgPlayButtonR, type: "category" },
   { name: "Music", icon: CgMusicNote, type: "category" },
   { name: "Films", icon: FiFilm, type: "category" },
   { name: "Live", icon: MdLiveTv, type: "category" },

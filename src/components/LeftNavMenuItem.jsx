@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LeftNavMenuItem = ({
   text,
@@ -8,6 +9,7 @@ const LeftNavMenuItem = ({
   clicked,
   ShortNavIcon,
   ShortNavText,
+  ShortNavLink,
 }) => {
   return (
     <>
@@ -18,8 +20,10 @@ const LeftNavMenuItem = ({
           }`}
           onClick={() => setSelectedCategory(ShortNavText)}
         >
-          <div className="text-xl">{ShortNavIcon}</div>
-          <div className="text-[11px]">{ShortNavText}</div>
+          <Link to={`/${ShortNavLink}`} className="text-xl">
+            {ShortNavIcon}
+          </Link>
+          <Link className="text-[11px]">{ShortNavText}</Link>
         </div>
       ) : (
         <div

@@ -1,12 +1,11 @@
 import React from "react";
 
-// import browserRouter to navigate throut the page
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-// importing all the components
 import Header from "./components/Header";
 import SearchResult from "./components/SearchResult ";
 import Feed from "./Feed";
+import Download from "./components/Download";
 
 const App = () => {
   return (
@@ -20,6 +19,7 @@ const App = () => {
               path="/searchResult/:searchQuery"
               element={<SearchResult />}
             />
+            <Route path="/downloads" element={<Download />} />
           </Routes>
         </div>
       </BrowserRouter>

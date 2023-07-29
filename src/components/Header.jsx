@@ -1,33 +1,24 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useState } from "react";
 
-// react router packages
 import { Link, useNavigate } from "react-router-dom";
 
-// icons
-import { HiOutlineMenu } from "react-icons/hi";
-import { BsBell, BsCameraVideo, BsYoutube } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
-import { BsMicFill } from "react-icons/bs";
+import { BsBell, BsCameraVideo, BsMicFill, BsYoutube } from "react-icons/bs";
+import { HiOutlineMenu } from "react-icons/hi";
 
-// import conrext api
 import { Context } from "../contexts/contextApi";
 
 const Header = () => {
-  // state for tracking search string
   const [searchQuery, setSearchQuery] = useState("");
 
-  // using contex api in header component
   const { clicked, setClicked } = useContext(Context);
 
-  // toggle short navbar
   const toggleNav = () => {
     setClicked(!clicked);
   };
 
-  // to navigate the search pages
   const navigate = useNavigate();
 
-  // function for search on youtube
   const searchQueryHandler = (event) => {
     if (
       (event?.key === "Enter" || event === "searchButton") &&
@@ -35,11 +26,6 @@ const Header = () => {
     ) {
       navigate(`searchResult/${searchQuery}`);
     }
-  };
-
-  // mobile menu and using toggle state created by context api
-  const mobileMenuToggle = () => {
-    setMobileMenu(!mobileMenu);
   };
 
   return (

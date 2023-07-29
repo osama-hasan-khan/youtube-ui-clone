@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { Context } from "../contexts/contextApi";
 
-const SearchResult  = () => {
-  return (
-    <div>SearchResult </div>
-  )
-}
+const SearchResult = () => {
+  const { clicked } = useContext(Context);
+  return <div>SearchResult </div>;
+};
 
-export default SearchResult 
+export default SearchResult;

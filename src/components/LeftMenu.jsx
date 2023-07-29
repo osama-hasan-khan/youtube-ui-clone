@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { Context } from "../contexts/contextApi";
 import { categories, links, shortNavbar } from "../utils/constants";
 import LeftNavMenuItem from "./LeftNavMenuItem";
-import { useContext } from "react";
-import { Context } from "../contexts/contextApi";
-import { Link } from "react-router-dom";
 
 const LeftMenu = () => {
   const { selectedCategory, setSelectedCategory, clicked } =
@@ -12,13 +11,16 @@ const LeftMenu = () => {
   return (
     <>
       {clicked ? (
-        <div className="w-[80px]">
+        <div className="w-[80px] flex flex-col py-4">
           {shortNavbar.map((navBar) => {
             return (
               <LeftNavMenuItem
                 ShortNavIcon={<navBar.icon />}
                 ShortNavText={navBar.name}
+                ShortNavLink={navBar.type}
                 clicked={clicked}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
               />
             );
           })}

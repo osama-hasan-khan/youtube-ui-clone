@@ -1,2 +1,2 @@
 # Creating YouTube UI clone 
-creating youtube ui clone using React js and tailwindcss
+creating youtube user interface (web) clone using React js and tailwindcss

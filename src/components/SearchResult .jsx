@@ -1,9 +1,23 @@
-import React, { useContext } from "react";
-import { Context } from "../contexts/contextApi";
+import React from "react";
+import { feedVideos, searchVideos } from "../utils/constants";
+import SearchVideos from "./SearchVideos";
 
 const SearchResult = () => {
-  const { clicked } = useContext(Context);
-  return <div>SearchResult </div>;
+  return (
+    <div className="pl-[90px] pt-6">
+      <div className="">
+        {searchVideos.map((result) => {
+          return (
+            <SearchVideos
+              video={result.thumbnailUrl}
+              title={result.title}
+              channelName={result.channelName}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default SearchResult;

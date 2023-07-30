@@ -1241,3 +1241,14 @@ export const feedVideos = [
     createdAt: new Date(),
   },
 ];
+
+export const searchVideos = [
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/mv9afG2Dm9I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuJe6KNUpfXqLkjFhV1MXptflw_g",
+    channelName: "Marques Brownlee",
+    title: "I Said Yes to Every Email for a Month!",
+    viewCount: 2139763,
+    createdAt: new Date(),
+  },
+];

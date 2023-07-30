@@ -13,7 +13,7 @@ const VideoCards = ({
       <img
         src={thumbnailUrl}
         alt=""
-        className="h-[207px] w-[395px] object-cover rounded-xl"
+        className="h-[220px] w-[400px] object-cover rounded-xl"
       />
       <div className="flex gap-3 p-1">
         <img

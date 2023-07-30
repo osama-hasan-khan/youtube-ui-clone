@@ -1,12 +1,14 @@
 import React from "react";
-import LeftMenu from "./components/LeftMenu";
-import Videos from "./components/Videos";
+import LeftMenu from "./LeftMenu";
+import Videos from "./Videos";
 
 const Feed = () => {
   return (
     <div className="flex flex-row h-[calc(100%-56px)]">
       <LeftMenu />
-      <Videos />
+      <div className="w-[calc(100%-240px)] overflow-y-scroll">
+        <Videos />
+      </div>
     </div>
   );
 };

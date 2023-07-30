@@ -1,15 +1,18 @@
 import React from "react";
 import { feedVideos } from "../utils/constants";
+import VideoCards from "./VideoCards";
 
 const Videos = () => {
   return (
-    <div className="grid grid-cols-3 py-4  px-8 gap-14 overflow-y-auto cursor-pointer">
+    <div className="grid grid-cols-3 cursor-pointer">
       {feedVideos.map((video) => {
         return (
-          <img
-            src={video.thumbnailUrl}
-            alt=""
-            className="h-[200px] w-[380px] rounded-xl object-cover"
+          <VideoCards
+            thumbnailUrl={video.thumbnailUrl}
+            channelName={video.channelName}
+            title={video.title}
+            viewCount={video.viewCount}
+            createdAt={video.createdAt}
           />
         );
       })}

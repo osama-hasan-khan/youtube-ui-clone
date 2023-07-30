@@ -17,7 +17,7 @@ export const shortNavbar = [
   {
     name: "Home",
     icon: AiFillHome,
-    type: "/",
+    type: "/category",
   },
   { name: "Shorts", icon: AiFillPlayCircle, type: "category" },
   { name: "Subscriptions", icon: BsPlayBtn, type: "category" },
@@ -27,7 +27,7 @@ export const shortNavbar = [
     type: "category",
   },
   { name: "Library", icon: CgPlayButtonR, type: "category" },
-  { name: "Downloads", icon: LiaDownloadSolid, type: "downloads" },
+  { name: "Downloads", icon: LiaDownloadSolid, type: "category" },
 ];
 
 export const categories = [
@@ -44,7 +44,7 @@ export const categories = [
   { name: "Library", icon: CgPlayButtonR, type: "category" },
   { name: "History", icon: FaClockRotateLeft, type: "category" },
   { name: "Your ideos", icon: LuPlayCircle, type: "category" },
-  { name: "Watch ater", icon: BsClockHistory, type: "category" },
+  { name: "Watch later", icon: BsClockHistory, type: "category" },
   { name: "Downloads", icon: LiaDownloadSolid, type: "category", border: true },
 
   { name: "Trending", icon: BsFire, type: "category" },

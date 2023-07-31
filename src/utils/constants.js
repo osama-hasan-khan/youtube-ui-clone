@@ -1248,7 +1248,34 @@ export const searchVideos = [
       "https://i.ytimg.com/vi/mv9afG2Dm9I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuJe6KNUpfXqLkjFhV1MXptflw_g",
     channelName: "Marques Brownlee",
     title: "I Said Yes to Every Email for a Month!",
-    viewCount: 2139763,
+    viewCount: 213,
+    createdAt: new Date(),
+  },
+];
+
+export const suggestedVideos = [
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/mv9afG2Dm9I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBuJe6KNUpfXqLkjFhV1MXptflw_g",
+    channelName: "Marques Brownlee",
+    title: "I Said Yes to Every Email for a Month!",
+    viewCount: 213,
+    createdAt: new Date(),
+  },
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/0fYi8SGA20k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCLCUEInAbtbBc8mA81bGvYB0UYeg",
+    channelName: "JavaScript Mastery",
+    title: "Build and Deploy an Amazing 3D Web Developer Portfolio in React JS",
+    viewCount: 72421,
+    createdAt: new Date(),
+  },
+  {
+    thumbnailUrl:
+      "https://i.ytimg.com/vi/bK1g9bPHUTo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnbtWfieWs7hdk0P4CbahEi7dnYg",
+    channelName: "Einzelgänger",
+    title: "Live More by Doing Less | The Philosophy of Slow Living",
+    viewCount: 120391,
     createdAt: new Date(),
   },
 ];

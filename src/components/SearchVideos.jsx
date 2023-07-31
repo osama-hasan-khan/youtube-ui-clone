@@ -25,7 +25,7 @@ const SearchVideos = ({ video, title, channelName }) => {
               <span>{channelName}</span>
               <span>4.07M subscibers</span>
             </div>
-            <button className="p-2 px-6 text-white bg-black rounded-full font-semibold">
+            <button className="p-2 px-5 text-white bg-black rounded-full font-semibold">
               Subscribe
             </button>
           </div>

@@ -24,9 +24,7 @@ const Slider = () => {
   return (
     <div className="sticky top-0 flex flex-row px-3 py-6 overflow-x-scroll gap-3 bg-white shadow-sm">
       {[...slides].map((item) => {
-        return (
-          <div className="bg-zinc-100 rounded-md px-[1px] py-[]">{item}</div>
-        );
+        return <div className="bg-zinc-100 rounded-md px-[px]">{item}</div>;
       })}
     </div>
   );

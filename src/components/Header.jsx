@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 flex justify-between items-center h-14 px-4 md:px-7 shadow-sm">
+    <div className="flex justify-between items-center h-14 px-4 py-9 shadow-sm bg-white">
       {/* logo */}
       <div className="flex items-center gap-6">
         <div className="flex items-center p-2 rounded-full hover:bg-zinc-200 cursor-pointer">

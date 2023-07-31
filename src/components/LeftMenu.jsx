@@ -11,7 +11,7 @@ const LeftMenu = () => {
   return (
     <>
       {clicked ? (
-        <div className="w-[80px] flex flex-col py-4">
+        <div className="w-[80px] flex flex-col py-4 pt-7">
           {shortNavbar.map((navBar) => {
             return (
               <LeftNavMenuItem

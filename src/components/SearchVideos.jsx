@@ -7,7 +7,7 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 
 const SearchVideos = ({ video, title, channelName }) => {
   return (
-    <div className="">
+    <div>
       <div className="flex flex-col w-[910px]">
         <img
           src={video}
@@ -48,6 +48,12 @@ const SearchVideos = ({ video, title, channelName }) => {
               <BiDotsHorizontalRounded size={20} />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col w-[910px] bg-zinc-100 mt-4 p-2 rounded-md">
+        <div className="flex flex-row gap-2 font-semibold">
+          <span>26 views</span>
+          <span>Jul 23, 2023</span>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { feedVideos, searchVideos, suggestedVideos } from "../utils/constants";
+import { searchVideos, suggestedVideos } from "../utils/constants";
 import SearchVideos from "./SearchVideos";
 import SuggestedVideos from "./SuggestedVideos";
 
@@ -17,7 +17,7 @@ const SearchResult = () => {
           );
         })}
       </div>
-      <div className="max-w-[460px] pt-2 flex flex-col overflow-y-scroll gap-3">
+      <div className="max-w-[430px] pt-2 flex flex-col gap-3">
         {suggestedVideos.map((result) => {
           return (
             <SuggestedVideos

@@ -12,9 +12,11 @@ const App = () => {
     <>
       <BrowserRouter>
         <div className="flex flex-col h-screen">
-          <Header />
+          <div className="fixed top-0 w-full">
+            <Header />
+          </div>
           <Routes>
-            <Route path="/" element={<Feed />} />
+            <Route index element={<Feed />} />
             <Route
               path="/searchResult/:searchQuery"
               element={<SearchResult />}
